@@ -1,4 +1,4 @@
-import sprite from "../img/sprite.svg";
+import Sprite from "../img/sprite.svg";
 import { features } from "../constants/features";
 
 const Features = () => {
@@ -9,7 +9,7 @@ const Features = () => {
         return (
           <div className='feature' key={id}>
             <svg className='feature__icon'>
-              <use href={sprite + icon}></use>
+              <use href={Sprite + icon}></use>
             </svg>
             <h4 className='heading-4 heading-4--dark'>{heading}</h4>
             <p className='feature__text'>{text}</p>

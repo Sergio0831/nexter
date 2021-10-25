@@ -1,5 +1,8 @@
 import Container from "./Container";
 import Features from "./Features";
+import Footer from "./Footer";
+import Gallery from "./Gallery";
+import Homes from "./Homes";
 import Story from "./Story";
 
 const Layout = () => {
@@ -10,9 +13,9 @@ const Layout = () => {
       <div className='realtors'>Top 3 realtors</div>
       <Features />
       <Story />
-      <section className='homes'>Homes</section>
-      <section className='gallery'>Gallery</section>
-      <footer className='footer'>Footer</footer>
+      <Homes />
+      <Gallery />
+      <Footer />
     </Container>
   );
 };
