@@ -22,7 +22,9 @@ const Story = () => {
           distinctio necessitatibus pariatur voluptatibus. Quidem consequatur
           harum volupta!
         </p>
-        <button className='btn'>Find your own home</button>
+        <button type='button' className='btn'>
+          Find your own home
+        </button>
       </div>
     </>
   );

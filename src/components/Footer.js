@@ -1,26 +1,42 @@
 const Footer = () => {
   return (
     <footer className='footer'>
-      <nav className='nav'>
+      <ul className='nav'>
         <li className='nav__item'>
-          <a href='#'>Find your dream house</a>
+          <a href='#' className='nav__link'>
+            Find your dream house
+          </a>
         </li>
         <li className='nav__item'>
-          <a href='#'>Request proposal</a>
+          <a href='#' className='nav__link'>
+            Request proposal
+          </a>
         </li>
         <li className='nav__item'>
-          <a href='#'>Download home planner</a>
+          <a href='#' className='nav__link'>
+            Download home planner
+          </a>
         </li>
         <li className='nav__item'>
-          <a href='#'>Contact us</a>
+          <a href='#' className='nav__link'>
+            Contact us
+          </a>
         </li>
         <li className='nav__item'>
-          <a href='#'>Submit your property</a>
+          <a href='#' className='nav__link'>
+            Submit your property
+          </a>
         </li>
         <li className='nav__item'>
-          <a href='#'>Come work with us</a>
+          <a href='#' className='nav__link'>
+            Come work with us
+          </a>
         </li>
-      </nav>
+      </ul>
+      <p className='copyright'>
+        &copy; Copyright {new Date().getFullYear()}. Designed by Jonas
+        Schmedtmann, coded by Sergejs Ivcenko.
+      </p>
     </footer>
   );
 };

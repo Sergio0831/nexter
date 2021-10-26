@@ -10,7 +10,7 @@ const Gallery = () => {
         >
           <img
             src={image.imgSrc}
-            alt={`Gallery image ${image.id}`}
+            alt={`Gallery ${image.id}`}
             className='gallery__img'
           />
         </figure>

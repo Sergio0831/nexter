@@ -40,7 +40,9 @@ const Homes = () => {
               </svg>
               <p>&euro;{price.toLocaleString()}</p>
             </div>
-            <button className='btn home__btn'>Contact Realtor</button>
+            <button className='btn home__btn' type='button'>
+              Contact Realtor
+            </button>
           </div>
         );
       })}

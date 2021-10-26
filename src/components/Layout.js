@@ -2,15 +2,18 @@ import Container from "./Container";
 import Features from "./Features";
 import Footer from "./Footer";
 import Gallery from "./Gallery";
+import Header from "./Header";
 import Homes from "./Homes";
+import Realtors from "./Realtors";
+import SideBar from "./SideBar";
 import Story from "./Story";
 
 const Layout = () => {
   return (
     <Container>
-      <div className='sidebar'>Sidebar</div>
-      <header className='header'>Header</header>
-      <div className='realtors'>Top 3 realtors</div>
+      <SideBar />
+      <Header />
+      <Realtors />
       <Features />
       <Story />
       <Homes />
