@@ -1,6 +1,6 @@
 .realtors {
   background-color: $color-secondary;
-  grid-column: col-start 7 / full-end;
+  grid-column: 1 / -1;
   padding: 3rem;
 
   display: grid;
@@ -9,9 +9,23 @@
   justify-items: center;
   row-gap: 1rem;
 
+  @media only screen and (min-width: $bp-medium) {
+    grid-column: col-start 7 / full-end;
+  }
+
   &__list {
     display: grid;
     row-gap: 5vh;
+    column-gap: 2rem;
+    grid-template-columns: 1fr;
+
+    @media only screen and (min-width: $bp-small) {
+      grid-template-columns: repeat(3, min-content max-content);
+    }
+
+    @media only screen and (min-width: $bp-medium) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__img {

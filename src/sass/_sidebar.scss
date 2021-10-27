@@ -1,10 +1,17 @@
 .sidebar {
   background-color: $color-primary;
-  grid-column: sidebar-start / sidebar-end;
-  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
 
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media only screen and (min-width: $bp-large) {
+    grid-column: sidebar-start / sidebar-end;
+    grid-row: 1 / -1;
+    justify-content: center;
+  }
 }
 
 .nav-btn {
@@ -12,8 +19,15 @@
   border-radius: 0;
   background-color: transparent;
   cursor: pointer;
-  margin-top: 4rem;
-  align-self: flex-start;
+  margin-top: 0;
+  margin-right: 3rem;
+  align-self: center;
+
+  @media only screen and (min-width: $bp-large) {
+    margin-top: 4rem;
+    align-self: flex-start;
+    margin-right: 0;
+  }
 
   &--bar-1,
   &--bar-2,
@@ -27,7 +41,11 @@
 
   &--bar-1 {
     &.change {
-      transform: rotate(-45deg) translate(-12px, 10px);
+      transform: rotate(-45deg) translate(-8px, 8px);
+
+      @media only screen and (min-width: $bp-largest) {
+        transform: rotate(-45deg) translate(-12px, 10px);
+      }
     }
   }
 
@@ -39,7 +57,11 @@
 
   &--bar-3 {
     &.change {
-      transform: rotate(45deg) translate(-12px, -12px);
+      transform: rotate(45deg) translate(-11px, -12px);
+
+      @media only screen and (min-width: $bp-largest) {
+        transform: rotate(45deg) translate(-12px, -12px);
+      }
     }
   }
 }

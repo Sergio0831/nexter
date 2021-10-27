@@ -1,7 +1,11 @@
 .footer {
   background-color: $color-secondary;
   grid-column: full-start / full-end;
-  padding: 8rem;
+  padding: 5rem;
+
+  @media only screen and (min-width: $bp-small) {
+    padding: 8rem;
+  }
 
   .nav {
     list-style: none;

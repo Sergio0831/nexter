@@ -1,10 +1,14 @@
 .homes {
   grid-column: center-start / center-end;
-  margin: 15rem 0;
+  margin: 8rem 0;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 7rem;
+
+  @media only screen and (min-width: $bp-small) {
+    margin: 15rem 0;
+  }
 }
 
 .home {
